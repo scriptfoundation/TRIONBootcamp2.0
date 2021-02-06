@@ -16,12 +16,13 @@ var getTimeInterval = setInterval(function() {
     var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    
-    dateElement.innerHTML = days
    
     if (timeleft < 0) {
         clearInterval(getTimeInterval);
     }
+
+    dateElement.innerHTML = days
+    
     return days
-}, 1000);
+}, 0);
 console.log(getTimeInterval);
