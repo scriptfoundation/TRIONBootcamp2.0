@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+
+}
+ul {
+    list-style-type: none ;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a,button{
+    border: none;
+    outline: none;
+}
+
+
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;        
+    }    
+}
+@mixin mobile-md {
+    @media (min-width: #{$mobile-md}) {
+        @content;        
+    }    
+}
+@mixin tab {
+    @media (min-width: #{$tab}) {
+        @content;        
+    }    
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;        
+    }    
+}
+// Fluid Typography
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+            font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+            font-size: $max-font-size;
+        }
+        }
+    }
+}
+
+
+.hide-m{
+    display: none;
+    @include tab{
+        display: block;
+        pointer-events: all;
+    }
+}
+.hide-mt{
+    display: none;
+    @include desktop{
+        display: block;
+        pointer-events: all;
+        
+    }
+}
+.hide-td{
+    display: block;
+    @include tab{
+        display: none;
+        pointer-events: none;
+    }
+}
+.hide-d{
+    display: block;
+    @include desktop{
+        display: none;
+        pointer-events: none;
+    }
+}
+
+h2{
+    @include fluid-type(360px, 1920px, 18px,36px)
+}
+.responsive--img{
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}

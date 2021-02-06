@@ -1,0 +1,138 @@
+// Importing Fonts from GFonts
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// SASS files
+
+@import "./variables";
+@import "./resets";
+@import "./flex-helpers";
+
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.logo{
+    font-family: $secondary-Font;
+    color: #fff;
+    font-size: 36px;
+}
+//---header---
+#cd__header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    
+    &--container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+//---nav---
+#cd__nav{
+    &--container{
+        padding: 24px 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap:48px;
+    }
+}
+.menu--links{
+    text-decoration: none;
+    color: white;
+    font-family: $primary-Font
+}
+//---buttons---
+.btn{
+    border: none;
+    padding: 18px 36px;
+    cursor: pointer;
+    outline: none;
+    font-family: $primary-Font
+}
+.btn--pink{
+    background-color: $pink;
+    color:$white;
+   
+}
+//---Hero---
+
+.hero{
+    display: flex;
+    height: 100vh;
+    &__main{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        flex-direction: column;
+        height: 100%;
+        .flex{
+            padding-top: 150px;
+        }
+    }
+   
+    &__bg{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        img{           
+            width: 100%;
+            height: 100vh;
+        }
+    }
+    &__left,&__right{
+        color: $white;
+        text-align: center;
+    }
+    &__left{
+        @include tab{
+            text-align: left !important;
+        }
+       
+       p:nth-child(1),p:nth-child(3){
+        font-weight:600;
+        @include fluid-type(360px, 1080px, 18px, 36px);
+       }
+       p:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            l1{
+                font-family: $secondary-Font;
+                line-height: 120%;
+            }
+            l2{
+                font-weight: 800;
+            }
+            @include fluid-type(360px, 1080px, 48px, 100px);
+       }
+     
+    }
+    &__right{
+        padding-top: 20%;
+        @include tab{
+            padding: 0;
+            text-align: right !important;
+        }
+        p:nth-child(1),p:nth-child(3){
+            font-weight: 600;
+            @include fluid-type(360px, 1080px, 18px, 36px);
+        }
+        p:nth-child(2){
+            @include fluid-type(360px, 1080px, 48px, 100px);
+            font-family: $secondary-Font;
+            line-height: 120%;
+       }
+    }
+    &__social{
+        color: $white;
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-direction: flex-end;
+        p:first-child{
+            font-weight: 600;
+        }
+    }
+}

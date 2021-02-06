@@ -1,0 +1,9 @@
+.flex{
+    display: block;
+    @include tab{
+        display: flex;
+    }
+}
+.flex--sbtw{
+    justify-content: space-between;
+}

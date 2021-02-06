@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, button {
+  border: none;
+  outline: none;
+}
+
+.hide-m {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-m {
+    display: block;
+    pointer-events: all;
+  }
+}
+
+.hide-mt {
+  display: none;
+}
+
+@media (min-width: 1120px) {
+  .hide-mt {
+    display: block;
+    pointer-events: all;
+  }
+}
+
+.hide-td {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hide-td {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.hide-d {
+  display: block;
+}
+
+@media (min-width: 1120px) {
+  .hide-d {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+h2 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 360px) {
+  h2 {
+    font-size: calc(18px + 18 * ((100vw - 360px) / 1560));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.responsive--img {
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flex--sbtw {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Monoton", cursive;
+  color: #fff;
+  font-size: 36px;
+}
+
+#cd__header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+#cd__header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cd__nav--container {
+  padding: 24px 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+.menu--links {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 18px 36px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn--pink {
+  background-color: #D60D53;
+  color: #fff;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.hero__main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.hero__main .flex {
+  padding-top: 150px;
+}
+
+.hero__bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero__left, .hero__right {
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero__left {
+    text-align: left !important;
+  }
+}
+
+.hero__left p:nth-child(1), .hero__left p:nth-child(3) {
+  font-weight: 600;
+}
+
+.hero__left p:nth-child(1), .hero__left p:nth-child(3) {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 360px) {
+  .hero__left p:nth-child(1), .hero__left p:nth-child(3) {
+    font-size: calc(18px + 18 * ((100vw - 360px) / 720));
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hero__left p:nth-child(1), .hero__left p:nth-child(3) {
+    font-size: 36px;
+  }
+}
+
+.hero__left p:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__left p:nth-child(2) l1 {
+  font-family: "Monoton", cursive;
+  line-height: 120%;
+}
+
+.hero__left p:nth-child(2) l2 {
+  font-weight: 800;
+}
+
+.hero__left p:nth-child(2) {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 360px) {
+  .hero__left p:nth-child(2) {
+    font-size: calc(48px + 52 * ((100vw - 360px) / 720));
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hero__left p:nth-child(2) {
+    font-size: 100px;
+  }
+}
+
+.hero__right {
+  padding-top: 20%;
+}
+
+@media (min-width: 768px) {
+  .hero__right {
+    padding: 0;
+    text-align: right !important;
+  }
+}
+
+.hero__right p:nth-child(1), .hero__right p:nth-child(3) {
+  font-weight: 600;
+}
+
+.hero__right p:nth-child(1), .hero__right p:nth-child(3) {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 360px) {
+  .hero__right p:nth-child(1), .hero__right p:nth-child(3) {
+    font-size: calc(18px + 18 * ((100vw - 360px) / 720));
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hero__right p:nth-child(1), .hero__right p:nth-child(3) {
+    font-size: 36px;
+  }
+}
+
+.hero__right p:nth-child(2) {
+  font-family: "Monoton", cursive;
+  line-height: 120%;
+}
+
+.hero__right p:nth-child(2) {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 360px) {
+  .hero__right p:nth-child(2) {
+    font-size: calc(48px + 52 * ((100vw - 360px) / 720));
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hero__right p:nth-child(2) {
+    font-size: 100px;
+  }
+}
+
+.hero__social {
+  color: #fff;
+  padding: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  -ms-flex-direction: flex-end;
+      flex-direction: flex-end;
+}
+
+.hero__social p:first-child {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */
