@@ -57,6 +57,16 @@
     color:$white;
    
 }
+/* Button for mobile*/
+.btn-mobile{
+    margin: 15px auto;
+    display: block;
+}
+@media (min-width: $tab){
+    .btn-mobile{
+        display: none!important;
+    }
+}
 //---Hero---
 
 .hero{
