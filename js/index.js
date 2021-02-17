@@ -27,10 +27,10 @@ var getTimeInterval = setInterval(function() {
 }, 0);
 
 let heroH = document.querySelector('.hero');
-console.log(heroH.clientHeight);
-console.log(heroH);
+//console.log(heroH.clientHeight);
+//console.log(heroH);
 const elem = document.querySelector("main");
 
   const rect = elem.getClientRects();
-  console.log(rect);
-  console.log(window.innerHeight-heroH.clientHeight);
+  //console.log(rect);
+  //console.log(window.innerHeight-heroH.clientHeight);

@@ -10,6 +10,9 @@
 html{
     background-color: $primary;
 }
+html, body{
+    overflow-x: hidden;
+}
 .nav-link{
     cursor: pointer;
     @include tab{
