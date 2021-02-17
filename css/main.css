@@ -511,7 +511,7 @@ html {
 .sub-section h1 {
   position: absolute;
   top: 0;
-  left: -5px;
+  left: 24px;
   line-height: 100%;
 }
 
