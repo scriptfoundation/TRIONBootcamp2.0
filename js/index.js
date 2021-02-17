@@ -25,4 +25,12 @@ var getTimeInterval = setInterval(function() {
     
     return days
 }, 0);
-console.log(getTimeInterval);
+
+let heroH = document.querySelector('.hero');
+console.log(heroH.clientHeight);
+console.log(heroH);
+const elem = document.querySelector("main");
+
+  const rect = elem.getClientRects();
+  console.log(rect);
+  console.log(window.innerHeight-heroH.clientHeight);
