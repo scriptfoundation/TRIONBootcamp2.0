@@ -5,18 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trion Bootcamp 2.0</title>
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <header id="cd__header">
         <div id="cd__header--container" class="container">
             <div class="logo">TRION</div>
             <nav id="cd__nav" class="hide-m">
                 <ul id="cd__nav--container">
-                    <li class="nav--items"><a class="menu--links" href="">SPEAKERS</a></li>
-                    <li class="nav--items"><a class="menu--links" href="">SPONSORS</a></li>
-                    <a href="https://rzp.io/l/trionbootcamp" target="_blank" class="btn btn--pink">GET TICKETS</a>
+                    <li class="nav--items"><a class="nav-link" data-text = "SCHEDULE"  href="#">SCHEDULE</a></li>
+                    <li class="nav--items"><a class="nav-link" data-text = "SPEAKERS"  href="#speaker">SPEAKERS</a></li>
+                    <li class="nav--items"><a class="nav-link" data-text = "SPONSORS" href="#sponsors">SPONSORS</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,18 +37,96 @@
                         <p id="date"></p>
                         <p>DAYS</p>
                     </section>
+                    <section  onclick="window.open('https://rzp.io/l/trionbootcamp','mywindow')" class="hero__overlay hide-m">
+                        <div id="pencil"><img src="/img/pencil.png" alt="" class="responsive-img"></div>
+                        <div id="arrow"><img src="/img/arrow.png" alt="" class="responsive-img"></div>
+                        <div class="ticket">
+                            <div id="ticket-orange"><img class="responsive-img" src="/img/ticket-orange.png" alt=""></div>
+                            <div id="ticket-pink"><img class="responsive-img" src="/img/ticket-pink.png" alt=""></div>
+                        </div>
+                    </section>
                 </section>
-
                 <a href="https://rzp.io/l/trionbootcamp" target="_blank" class="btn btn--pink btn-mobile">GET TICKETS</a>
-               
-            <section class="hero__social">
+            <!-- <section class="hero__social">
                 <p>@trionbootcamp</p>
                 <p>on <a href="">Instagram</a> | <a href="">Twitter</a> | <a href="">Linkedin</a></p>
-            </section>     
+            </section>      -->
+            </section>
         </section>
+        <section id="speaker" class="sub-section">
+            <section class="container">
+                <h1 class="font-sec text-gradient-pink">SPEAKERS</h1>
+                <p class="text-gradient-orange text-center">SPEAKERS FOR TRION BOOTCAMP 2021 NOT ANNOUCED YET,BUT CHECKOUT LAST YEARS SPEAKERS</p>
+            </section>
+            <div class="overlay-img">
+                <img class="responsive-img hide-m" src="/img/pattern.png" alt="">
+            </div>
+        </section>
+        <section id="sponsors" class="sub-section">
+            <section class="">
+                <h1 class="font-sec text-gradient-pink">SPONSORS</h1>
+                <div class="bg-pink container">                   
+                        <h2>WANT TO BECOME OUR PARTNER</h2>
+                        <p>TRION 2021 gives you a near-perfect platform to showcase your products or services to the conference audience.</p>
+                        <p>In 2020, we had an exciting line of speakers. The conference is an opportunity for you to showcase your product or services, your process model, or your services framework. </p>
+                </div>
+                <div id="last-year">
+                    <h3>LAST YEAR SPONSORS</h3>
+                    <div id="hr__scroll">
+                        <ul>
+                            <li><img class="responsive-img" src="/img/ls-gatsby-logo.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-zebronics.webp" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-progate.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-kfhub.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-du.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-ed.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-oh-campus.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-youth.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-gatsby-logo.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-zebronics.webp" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-progate.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-kfhub.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-du.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-ed.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-oh-campus.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-youth.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-gatsby-logo.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-zebronics.webp" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-progate.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-kfhub.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-du.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-ed.svg" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-oh-campus.png" alt=""></li>
+                            <li><img class="responsive-img" src="/img/ls-youth.svg" alt=""></li>
+                           
+                        </ul>
+                    </div> 
+                </div>
+            </section>
+           
+        </section>
+        <!-- <section class="sub-section">
+            <h1 class="font-sec  text-gradient-pink">VENUE</h1>
+            <section class="container">
+                
+            </section>
+        </section> -->
+        
     </main>
-
-    <script src="js/index.js"></script>
+    <footer id="cd__footer">
+        <footer id="cd__footer--container" class="container">
+            <div id="sf-logo"><img src="./img/sflogo.png" alt="Script Foundation Logo" class="responsive-img"></div>
+            <nav id="cd__footer--nav">
+                <ul id="cd__footer--nav--container">
+                    <li><a href="#sponsors">SPONSORS</a></li>
+                    <li><a href="#speaker">SPEAKERS</a></li>
+                    <li><a href="#">SCHEDULE</a></li>                   
+                </ul>
+            </nav>
+            <p id="copyright" >Copyright 2021 | <a href="#">Script Foundation</a></p>
+        </footer>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

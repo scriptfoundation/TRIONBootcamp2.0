@@ -19,7 +19,9 @@ a,button{
     outline: none;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 @mixin mobile {
     @media (min-width: #{$mobile}) {
         @content;        
@@ -98,7 +100,7 @@ a,button{
 h2{
     @include fluid-type(360px, 1920px, 18px,36px)
 }
-.responsive--img{
+.responsive-img{
     width: 100%;
     margin: auto;
     object-fit: cover;
