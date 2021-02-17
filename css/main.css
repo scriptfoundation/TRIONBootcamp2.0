@@ -542,58 +542,59 @@ html {
   display: block;
 }
 
-#sponsors section > div {
+#sponsors section > .bg-pink {
   padding: 24px;
   position: relative;
   color: #fff;
 }
 
-#sponsors section > div > h2 {
+#sponsors section > .bg-pink > h2 {
   font-weight: 600;
 }
 
-#sponsors section > div > h2 {
+#sponsors section > .bg-pink > h2 {
   font-size: 24px;
 }
 
 @media screen and (min-width: 360px) {
-  #sponsors section > div > h2 {
+  #sponsors section > .bg-pink > h2 {
     font-size: calc(24px + 48 * ((100vw - 360px) / 1560));
   }
 }
 
 @media screen and (min-width: 1920px) {
-  #sponsors section > div > h2 {
+  #sponsors section > .bg-pink > h2 {
     font-size: 72px;
   }
 }
 
-#sponsors section > div > p {
+#sponsors section > .bg-pink > p {
   padding-top: 24px;
 }
 
-#sponsors section > div > p {
+#sponsors section > .bg-pink > p {
   font-size: 16px;
 }
 
 @media screen and (min-width: 360px) {
-  #sponsors section > div > p {
+  #sponsors section > .bg-pink > p {
     font-size: calc(16px + 16 * ((100vw - 360px) / 1560));
   }
 }
 
 @media screen and (min-width: 1920px) {
-  #sponsors section > div > p {
+  #sponsors section > .bg-pink > p {
     font-size: 32px;
   }
 }
 
-#sponsors section > div::after {
+#sponsors section > .bg-pink::after {
   display: none;
 }
 
 @media (min-width: 800px) {
-  #sponsors section > div::after {
+  #sponsors section > .bg-pink::after {
+    display: block;
     content: "";
     position: absolute;
     background-color: #E54C61;
@@ -648,7 +649,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -672,6 +672,7 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
           flex: 0 0 100px;
+  margin-left: 24px;
 }
 
 @-webkit-keyframes moveSlideshow {

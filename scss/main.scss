@@ -285,7 +285,7 @@ html{
     & section{
         padding-top: 16%;
         display: block;
-        & > div{
+        & > .bg-pink{
             padding: 24px;
             position: relative;
             color: $white;
@@ -300,6 +300,7 @@ html{
             &::after{
                 display: none;
                 @include tab{
+                    display: block;
                     content: "";
                     position: absolute;
                     background-color: #E54C61;
@@ -332,7 +333,6 @@ html{
                     width: 1000px;
                     height: 50px;
                     display: flex;
-                    gap: 24px;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -344,6 +344,7 @@ html{
                         justify-content: center;
                         align-items: center;
                         flex: 0 0 100px;
+                        margin-left: 24px;
                     }
                 }
             }
