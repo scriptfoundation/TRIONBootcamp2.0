@@ -253,13 +253,6 @@ html, body{
 
 
 .sub-section{
-    height: 600px;
-    @include tab{
-        height: 60vh;
-    }
-    @include desktop{
-        height: 80vh;
-    }
     position: relative;
     & h1{
             position: absolute;
@@ -270,9 +263,6 @@ html, body{
     & section{
         height: 100%;
         padding-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         @include tab{
             padding-top: 180px;
         }
@@ -318,7 +308,7 @@ html, body{
 #speaker{
     margin-bottom: 100px;
     & > section{
-        align-items: initial;
+        display: block !important;
     }
     margin-top: 100px;
     & #cur-speakers{

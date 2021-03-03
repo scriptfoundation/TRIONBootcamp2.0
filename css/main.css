@@ -441,20 +441,7 @@ html, body {
 }
 
 .sub-section {
-  height: 600px;
   position: relative;
-}
-
-@media (min-width: 800px) {
-  .sub-section {
-    height: 60vh;
-  }
-}
-
-@media (min-width: 1120px) {
-  .sub-section {
-    height: 80vh;
-  }
 }
 
 .sub-section h1 {
@@ -467,9 +454,6 @@ html, body {
 .sub-section section {
   height: 100%;
   padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: 800px) {
@@ -522,7 +506,7 @@ html, body {
 }
 
 #speaker > section {
-  align-items: initial;
+  display: block !important;
 }
 
 #speaker #cur-speakers {
@@ -534,10 +518,6 @@ html, body {
   align-items: center;
 }
 
-/* #speaker .last-speakers{
-   margin-top: 80px;
-} */
-
 @media (min-width: 800px) {
   #speaker #cur-speakers {
     justify-content: space-between;
@@ -548,6 +528,53 @@ html, body {
   #speaker #cur-speakers {
     flex-direction: row;
   }
+}
+
+#speaker .last-speakers {
+  margin-top: 80px;
+}
+
+#speaker .last-speakers .lst-yr-ttl {
+  color: #FB9B6B;
+  font-size: calc(30px + 18 * ((100vw - 360px) / 1560));
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#speaker .last-speakers .cards {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#speaker .last-speakers .cards .card {
+  flex: 0 0 30%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  background-color: #260c67;
+  color: #fff;
+}
+
+#speaker .last-speakers .cards .card .spr-img {
+  flex: 0 0 35%;
+}
+
+#speaker .last-speakers .cards .card .spr-img img {
+  max-width: 100%;
+}
+
+#speaker .last-speakers .cards .card .name-sec {
+  flex: 0 0 65%;
+  padding: 15px;
+}
+
+#speaker .last-speakers .cards .card .name-sec .spkr-desg {
+  margin-top: 2px;
 }
 
 #sponsors {
@@ -727,7 +754,6 @@ html, body {
   width: 100%;
   background: linear-gradient(150deg, #FF0D86, #B7015C);
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 100% 100%;
@@ -767,7 +793,6 @@ html, body {
   width: 100%;
   background: linear-gradient(150deg, #FB9B6B, #DA5A1A);
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 100% 100%;
