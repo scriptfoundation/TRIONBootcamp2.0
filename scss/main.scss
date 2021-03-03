@@ -338,6 +338,55 @@ html, body{
        
     }
 }
+
+#speaker .last-speakers{
+   margin-top: 80px;
+   
+   .lst-yr-ttl{
+       color: #FB9B6B;
+       font-size: calc(30px + 18 * ((100vw - 360px) / 1560));
+       padding: 15px 0;
+       text-transform: uppercase;
+       font-weight: 700;
+   }
+
+   .cards{
+       width: 100%;
+       margin-top: 10px;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+
+       .card{
+
+           flex: 0 0 30%;
+           margin-top: 25px;
+           display: flex;
+           justify-content: center;
+           margin: 0 10px;
+           background-color: #260c67;
+           color: #fff;
+
+           .spr-img{
+               flex: 0 0 35%;
+               img{
+                   max-width: 100%;
+               }
+           }
+
+           .name-sec{
+               flex: 0 0 65%;
+               padding: 15px;
+
+               .spkr-desg{
+                   margin-top: 2px;
+               }
+           }
+       }
+   }
+}
+
+
 // Sponsors
 #sponsors{
     
@@ -460,7 +509,6 @@ html, body{
     width: 100%;
     background: linear-gradient(150deg, #FF0D86, #B7015C);
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 100% 100%;
@@ -478,7 +526,6 @@ html, body{
     width: 100%;
     background: linear-gradient(150deg, #FB9B6B, #DA5A1A);
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 100% 100%;
