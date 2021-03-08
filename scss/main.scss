@@ -376,11 +376,30 @@ html, body{
 
 
 // Sponsors
+.sponsors-cur{
+    padding: 24px 0;
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    @include tab{
+        justify-content: flex-start;
+    }
+    & li{
+        width: 300px;
+        height: 100px;
+    }
+}
 #sponsors{
     
     height: 100%;
     & section{
+
         padding-top: 16%;
+        @include tab{
+            padding-top: 200px;
+        }
         display: block;
         & > .bg-pink{
             padding: 24px;
@@ -524,6 +543,9 @@ html, body{
 
 
 // Helpers
+.margint-150px{
+    margin-top: 150px;
+}
 .bg-pink{
     background-color: $pink;
 }
