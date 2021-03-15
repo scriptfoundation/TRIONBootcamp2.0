@@ -282,7 +282,9 @@ html, body{
     }
     &:nth-of-type(even){
         margin-top: 16px;
-        
+        @include tab{
+            margin-top: 0;
+        }
         .card-1__name-plate{
             background-color: $orange;
         }
@@ -319,7 +321,7 @@ html, body{
         justify-content: center;
         align-items: center;
         @include tab{
-            justify-content: space-between;
+            justify-content: flex-start;
         }
         
         @include tab{
@@ -344,11 +346,20 @@ html, body{
        width: 100%;
        margin-top: 10px;
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
+       @include tab{
+           justify-content: center;
+       }
+       @include desktop{
+           justify-content: space-between;
+       }
        flex-wrap: wrap;
        gap: 16px;
        .card{
-           width: 400px;
+           
+        @include tab{
+            width: 400px;
+        }
            margin-top: 25px;
            display: flex;
            margin: 0 10px;
