@@ -525,7 +525,7 @@ html, body {
   align-items: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1120px) {
   #speaker #cur-speakers {
     justify-content: flex-start;
   }
