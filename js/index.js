@@ -26,11 +26,20 @@ var getTimeInterval = setInterval(function() {
     return days
 }, 0);
 
-let heroH = document.querySelector('.hero');
-//console.log(heroH.clientHeight);
-//console.log(heroH);
-const elem = document.querySelector("main");
-
-  const rect = elem.getClientRects();
-  //console.log(rect);
-  //console.log(window.innerHeight-heroH.clientHeight);
+$(".schedule-btn").click(function(){
+    $("body").css({"height":"100vh"})
+    $("#schedule").addClass("show-schedule")
+})
+$(".close-schedule").click(function(){
+    $("body").css({"height":"initial"})
+    $("#schedule").removeClass("show-schedule")
+})
+$(".date").click(function(){
+    $(this).addClass("date__active").siblings().removeClass("date__active")
+    if(this.id === "day-1"){
+        $(".schedule__table__wrapper").removeClass("table-move")
+    }
+    if(this.id === "day-2"){
+        $(".schedule__table__wrapper").addClass("table-move")
+    }
+})

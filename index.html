@@ -17,16 +17,134 @@
         <header id="cd__header">
             <div id="cd__header--container" class="container">
                 <div class="logo">TRION</div>
+                <button class=" schedule-btn btn btn--pink hide-td">SCHEDULE</button>
                 <nav id="cd__nav" class="hide-m">
                     <ul id="cd__nav--container">
-                        <li class="nav--items"><a class="nav-link btn-disabled" data-text="SCHEDULE" href="#">SCHEDULE</a></li>
+                        <li class="nav--items"><a class="nav-link schedule-btn" data-text="SCHEDULE" href="#">SCHEDULE</a></li>
                         <li class="nav--items"><a class="nav-link" data-text="SPEAKERS" href="#speaker">SPEAKERS</a></li>
                         <li class="nav--items"><a class="nav-link" data-text="SPONSORS" href="#sponsors">SPONSORS</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
+        <section id="schedule">
+            <section id="schedule__wrapper">
+                <h2>SCHEDULE</h2>
+                <div id = "schedule__dates">
+                    <a href="#" id = "day-1" class="date date__active">10TH APRIL 2021</a>
+                    <a href="#" id = "day-2" class="date">11TH APRIL 2021</a>
+                </div>
+                <div class="schedule__table__wrapper">
+                    <ul id="schedule__table-1" class ="schedule__table">
+                        <li class = "schedule__table--item">
+                            <p class = "time">12:00PM - 12:30PM</p>
+                            <div class ="name">
+                                <p>Opening Keynote</p>
+                                <p>Jai Sadana | Founder and CEO Script Found</p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">12:30PM - 02:30PM</p>
+                            <div class ="name">
+                                <p>Introduction to Full Stack & MERN</p>
+                                <p>Praveen Kumar</p>
+                            </div>
+                        </li>
+                        <li class = "schedule__table--item">
+                            <p class = "time">02:00PM - 02:15PM</p>
+                            <div class ="name">
+                                <p>Break</p>
+                                <p>15 Minutes</p>
+                            </div>
+                        </li>
+                        <li class = "schedule__table--item">
+                            <p class = "time">02:15PM - 03:45PM</p>
+                            <div class ="name">
+                                <p>Hands On Workshop On Git & Github</p>
+                                <p>Shivam Goyal</p>
+                            </div>
+                        </li>
+                        <li class = "schedule__table--item">
+                            <p class = "time">03:45PM - 04:00PM</p>
+                            <div class ="name">
+                                <p>Kahoot Event To Win Exciting Prizes</p>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class = "schedule__table--item">
+                            <p class = "time">04:00PM - 06:00PM</p>
+                            <div class ="name">
+                                <p>First Step in the hello world </p>
+                                <p>Mohit Uniyal</p>
+                            </div>
+                        </li>
+                        <li class = "schedule__table--item">
+                            <p class = "time">06:00PM - 06:10PM</p>
+                            <div class ="name">
+                                <p>End of Day 1</p>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="schedule__table-2" class ="schedule__table">
+                        <li class = "schedule__table--item">
+                            <p class = "time">01:00PM - 01:15PM</p>
+                            <div class ="name">
+                                <p>Welcome Back To Day Two</p>
+                                <p></p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">01:15PM - 01:45PM</p>
+                            <div class ="name">
+                                <p>Application Of Data Science Across Domains</p>
+                                <p>Usha Rengaraju</p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">01:45PM - 02:15PM</p>
+                            <div class ="name">
+                                <p>Kahoot Event To Win Exciting Prizes</p>
+                                <p></p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">02:15PM - 03:00PM</p>
+                            <div class ="name">
+                                <p>Design Thinking</p>
+                                <p>Tanushi Karanwal</p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">03:00PM - 03:20PM</p>
+                            <div class ="name">
+                                <p>Break</p>
+                                <p>20 Minutes</p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">03:20PM - 04:00PM</p>
+                            <div class ="name">
+                                <p>How Team can build and ship projects fast using Repl.it</p>
+                                <p>Arnav Bansal</p>
+                            </div>
+                        </li>                        
+                        <li class = "schedule__table--item">
+                            <p class = "time">04:00PM - 04:10PM</p>
+                            <div class ="name">
+                                <p>End Of TRION Bootcamp 2nd Edition</p>
+                                <p>Thank You</p>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+                <button class="close-schedule"><div></div><div></div></button>
+                <p id="note">Note: All Timing are in IST</p>
+            </section>
+           
+        </section>
+        <main id="main-content">
+            
             <section class="hero">
                 <div class="hero__bg">
                     <img src="./img/bg-img.jpg" alt="Trion Hero background">
@@ -322,7 +440,9 @@
             </footer>
         </footer>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    
 </body>
 
 </html>
